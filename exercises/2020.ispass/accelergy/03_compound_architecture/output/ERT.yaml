@@ -1,0 +1,167 @@
+ERT:
+  version: 0.3
+  tables:
+  - name: simple_compound.PE[0..4].MAC
+    actions:
+    - name: mac_random
+      arguments: null
+      energy: 2.77817
+    - name: mac_reused
+      arguments: null
+      energy: 2.45455
+    - name: mac_gated
+      arguments: null
+      energy: 0.11469
+    - name: idle
+      arguments: null
+      energy: 0.07779
+  - name: simple_compound.PE[0..4].buffer
+    actions:
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.05517
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 0.19325
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.16353
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 0.30161
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.05517
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 0.19325
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.16353
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 0.30161
+    - name: idle
+      arguments: null
+      energy: 0.01827
+  - name: simple_compound.GLB
+    actions:
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.04893
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 4.77746
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.55555
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 5.28409
+    - name: write
+      arguments:
+        address_delta: 2
+        data_delta: 0
+      energy: 1.06218
+    - name: write
+      arguments:
+        address_delta: 2
+        data_delta: 1
+      energy: 5.79072
+    - name: write
+      arguments:
+        address_delta: 3
+        data_delta: 0
+      energy: 1.56881
+    - name: write
+      arguments:
+        address_delta: 3
+        data_delta: 1
+      energy: 6.29735
+    - name: write
+      arguments:
+        address_delta: 4
+        data_delta: 0
+      energy: 2.07544
+    - name: write
+      arguments:
+        address_delta: 4
+        data_delta: 1
+      energy: 6.80398
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.04893
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 4.10156
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.48314
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 4.53578
+    - name: read
+      arguments:
+        address_delta: 2
+        data_delta: 0
+      energy: 0.91735
+    - name: read
+      arguments:
+        address_delta: 2
+        data_delta: 1
+      energy: 4.96999
+    - name: read
+      arguments:
+        address_delta: 3
+        data_delta: 0
+      energy: 1.35156
+    - name: read
+      arguments:
+        address_delta: 3
+        data_delta: 1
+      energy: 5.4042
+    - name: read
+      arguments:
+        address_delta: 4
+        data_delta: 0
+      energy: 1.78577
+    - name: read
+      arguments:
+        address_delta: 4
+        data_delta: 1
+      energy: 5.83841
+    - name: idle
+      arguments: null
+      energy: 0.01203

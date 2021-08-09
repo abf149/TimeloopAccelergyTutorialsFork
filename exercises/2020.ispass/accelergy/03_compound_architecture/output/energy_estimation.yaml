@@ -1,0 +1,14 @@
+energy_estimation:
+  version: 0.3
+  components:
+  - name: simple_compound.GLB
+    energy: 143.5565
+  - name: simple_compound.PE[0].buffer
+    energy: 14.2087
+  - name: simple_compound.PE[0].MAC
+    energy: 85.06544999999998
+  - name: simple_compound.PE[1].buffer
+    energy: 15.5895
+  - name: simple_compound.PE[1].MAC
+    energy: 85.06544999999998
+  Total: 343.4856
