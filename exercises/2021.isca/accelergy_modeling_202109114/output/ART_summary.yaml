@@ -1,0 +1,12 @@
+ART_summary:
+  version: 0.3
+  table_summary:
+  - name: matraptor_like.PE[0..8].merge_queue[0..9]
+    area: 20980.2
+    primitive_estimations: Cacti
+  - name: matraptor_like.PE[0..8].mac
+    area: 1
+    primitive_estimations: dummy_table
+  - name: matraptor_like.PE[0..8].adder_tree[0..5]
+    area: 1
+    primitive_estimations: dummy_table

@@ -1,0 +1,23 @@
+compound_components:
+  version: 0.3
+  classes:
+  - name: PE
+    attributes:
+     technology: 28nm
+
+    subcomponents:
+     - name: merge_queue[0..9]
+       class: SRAM
+       attributes:
+         width: 32
+         depth: 1024
+         n_rdwr_ports: 0
+         n_rd_ports: 1
+         n_wr_ports: 1
+
+    actions
+     - name: idle
+       subcomponents:
+        - name: merge_queue[0..9]
+          actions:
+           - name: idle

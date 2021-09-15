@@ -1,0 +1,48 @@
+ERT:
+  version: 0.3
+  tables:
+  - name: matraptor_like.merge_queue[0..9]
+    actions:
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.00076
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 1.80598
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.77442
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 2.57965
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.00076
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 2.1585
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.9255
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 3.08325
+    - name: idle
+      arguments: null
+      energy: 0.00076

@@ -1,0 +1,7 @@
+ART:
+  version: 0.3
+  tables:
+  - name: matraptor_like.PE.merge_queue[0..79]
+    area: 11341.4
+  - name: matraptor_like.merge_queue[0..79]
+    area: 11341.4

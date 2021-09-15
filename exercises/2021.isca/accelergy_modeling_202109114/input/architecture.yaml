@@ -1,0 +1,100 @@
+# When to use component vs subtree.
+# What is the right granularity for architectural, microarchitectural modeling.
+# Adders and adder trees?
+# Authoritative list of sources for primitives
+# Documentation of primitives - doxygen for primitives?
+# Are all datawidths in bits, or are some in bytes
+# Modeling incomplete xbar
+# xbar device type
+# xbar throughput units
+# Does streaming from PE to RAM require a queue?
+# Number of ports
+# Bitness
+# Latency
+# Whether and how to model HBM, CPU power (Accelergy? gem5?)
+
+architecture:
+  # ============================================================
+  # Architecture Description
+  # ============================================================
+  version: 0.3
+  subtree:
+    - name: matraptor_like
+      attributes:
+        technology: 28nm
+        clockrate: 2ghz
+
+      - name: hbm
+
+      - name: xbar
+        class: xbar
+        attributes:
+         datawidth: 512
+         device_type:
+         horizontal_nodes:
+         vertical_nodes:
+         link_throughput: 128
+         link_latency:
+         flit_bytes:
+
+      subtree:
+      - name: spAL[0..7]
+        local:
+         - name: spAGEN
+           class: AGEN
+         - name: request_queue
+           class: regfile
+         - name: response_queue
+           class: regfile
+      - name: spBL[0..7]
+        local:
+         - name: spBGEN
+           class: AGEN
+         - name: request_queue
+           class: regfile
+           attributes:
+            width: 512
+            depth: 64
+            n_ports:
+         - name: response_queue
+           class: regfile
+           attributes:
+            width: 512
+            depth: 64
+            n_ports:
+      - name: PE[0..7]
+        local:
+         - name: merge_queue[0..9]
+           class: SRAM
+           attributes:
+             width: 32
+             depth: 1024
+             n_rdwr_ports: 0
+             n_rd_ports: 1
+             n_wr_ports: 1
+         - name: mac
+           class: intmac
+           attributes:
+            datawidth: 32
+         - name: adder_tree[0..5]
+           class: intadder
+         - name: controller
+           class:
+         - name: comparator
+           class:
+         - name: col_id
+           class:
+         - name: muxes
+           class:
+         - name: request_queue
+           class: regfile
+           attributes:
+            width: 512
+            depth: 64
+            n_ports:
+         - name: response_queue
+           class: regfile
+           attributes:
+            width: 512
+            depth: 64
+            n_ports:
