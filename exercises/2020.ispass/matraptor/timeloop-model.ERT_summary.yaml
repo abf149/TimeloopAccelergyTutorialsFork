@@ -1,0 +1,90 @@
+ERT_summary:
+  version: 0.3
+  table_summary:
+  - name: system.matraptor.PE[0..7].mac
+    actions:
+    - name: mac_random
+      energy: 2.20035
+    - name: mac_reused
+      energy: 1.87673
+    - name: mac_gated
+      energy: 0.10285
+    - name: idle
+      energy: 0.06595
+    primitive_estimation(s):
+    - name: system.matraptor.PE[0..7].mac
+      estimator: Aladdin_table
+  - name: system.DRAM
+    actions:
+    - name: read
+      energy: 249.6
+    - name: write
+      energy: 249.6
+    - name: idle
+      energy: 0
+    primitive_estimation(s):
+    - name: system.DRAM
+      estimator: Cacti
+  - name: system.matraptor.PE[0..7].merge_queue
+    actions:
+    - name: write
+      average_energy: 2.22156
+      max_energy: 4.37096
+      min_energy: 0.07216
+    - name: read
+      average_energy: 2.22156
+      max_energy: 4.37096
+      min_energy: 0.07216
+    - name: idle
+      energy: 0.03526
+    primitive_estimation(s):
+    - name: storage
+      estimator: Aladdin_table
+    - name: address_generators[0]
+      estimator: Aladdin_table
+    - name: address_generators[1]
+      estimator: Aladdin_table
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+  - name: system.matraptor.spAL[0..7]
+    actions:
+    - name: write
+      average_energy: 0.47249
+      max_energy: 0.89618
+      min_energy: 0.04881
+    - name: read
+      average_energy: 0.35564
+      max_energy: 0.66246
+      min_energy: 0.04881
+    - name: idle
+      energy: 0.01191
+    primitive_estimation(s):
+    - name: storage
+      estimator: Cacti
+    - name: address_generators[0]
+      estimator: Aladdin_table
+    - name: address_generators[1]
+      estimator: Aladdin_table
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+  - name: system.matraptor.spBL[0..7]
+    actions:
+    - name: write
+      average_energy: 0.47249
+      max_energy: 0.89618
+      min_energy: 0.04881
+    - name: read
+      average_energy: 0.35564
+      max_energy: 0.66246
+      min_energy: 0.04881
+    - name: idle
+      energy: 0.01191
+    primitive_estimation(s):
+    - name: storage
+      estimator: Cacti
+    - name: address_generators[0]
+      estimator: Aladdin_table
+    - name: address_generators[1]
+      estimator: Aladdin_table
+    - name: address_generators[0..1]
+      estimator: Aladdin_table

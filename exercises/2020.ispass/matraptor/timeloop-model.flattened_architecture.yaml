@@ -1,0 +1,61 @@
+architecture:
+  version: 0.3
+  local:
+  - name: system.matraptor.PE[0..7].merge_queue
+    class: smartbuffer_RF
+    attributes:
+      block-size: 1
+      memory_depth: 512
+      memory_width: 16
+      meshX: 8
+      n_banks: 1
+      n_buffets: 1
+      n_rdwr_ports: 2
+      read_bandwidth: 16
+      technology: 45nm
+      word-bits: 16
+      write_bandwidth: 16
+  - name: system.matraptor.PE[0..7].mac
+    class: intmac
+    attributes:
+      datawidth: 16
+      latency: 5ns
+      meshX: 8
+      num_pipeline_stages: 2
+      technology: 45nm
+  - name: system.matraptor.spAL[0..7]
+    class: smartbuffer_SRAM
+    attributes:
+      block-size: 1
+      memory_depth: 64
+      memory_width: 16
+      meshX: 8
+      n_banks: 1
+      n_buffets: 1
+      n_rdwr_ports: 2
+      read_bandwidth: 16
+      technology: 45nm
+      word-bits: 16
+      write_bandwidth: 16
+  - name: system.matraptor.spBL[0..7]
+    class: smartbuffer_SRAM
+    attributes:
+      block-size: 1
+      memory_depth: 64
+      memory_width: 16
+      meshX: 8
+      n_banks: 1
+      n_buffets: 1
+      n_rdwr_ports: 2
+      read_bandwidth: 16
+      technology: 45nm
+      word-bits: 16
+      write_bandwidth: 16
+  - name: system.DRAM
+    class: DRAM
+    attributes:
+      block-size: 4
+      technology: 65nm
+      type: HBM2
+      width: 64
+      word-bits: 16

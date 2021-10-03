@@ -1,0 +1,163 @@
+ERT:
+  version: 0.3
+  tables:
+  - name: system.matraptor.PE[0..7].mac
+    actions:
+    - name: mac_random
+      arguments: null
+      energy: 2.20035
+    - name: mac_reused
+      arguments: null
+      energy: 1.87673
+    - name: mac_gated
+      arguments: null
+      energy: 0.10285
+    - name: idle
+      arguments: null
+      energy: 0.06595
+  - name: system.DRAM
+    actions:
+    - name: read
+      arguments: null
+      energy: 249.6
+    - name: write
+      arguments: null
+      energy: 249.6
+    - name: idle
+      arguments: null
+      energy: 0
+  - name: system.matraptor.PE[0..7].merge_queue
+    actions:
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.07216
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 0.21024
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 4.23288
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 4.37096
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.07216
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 0.21024
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 4.23288
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 4.37096
+    - name: idle
+      arguments: null
+      energy: 0.03526
+  - name: system.matraptor.spAL[0..7]
+    actions:
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.04881
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 0.64197
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.30302
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 0.89618
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.04881
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 0.47837
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.2329
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 0.66246
+    - name: idle
+      arguments: null
+      energy: 0.01191
+  - name: system.matraptor.spBL[0..7]
+    actions:
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.04881
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 0.64197
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.30302
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 0.89618
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.04881
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 0.47837
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.2329
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 0.66246
+    - name: idle
+      arguments: null
+      energy: 0.01191
