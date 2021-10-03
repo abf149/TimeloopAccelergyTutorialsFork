@@ -25,12 +25,16 @@ Info: estimator plug-in identified by:  /usr/local/share/accelergy/estimation_pl
 Info: estimator plug-in identified by:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-table-based-plug-ins/table.estimator.yaml 
 table-based-plug-ins Identifies a set of tables named:  test_tables
 Info: CACTI plug-in... Querying CACTI for request:
+ {'class_name': 'SRAM', 'attributes': OrderedDict([('technology', '45nm'), ('width', 32), ('depth', 10240), ('n_rdwr_ports', 2), ('n_banks', 1), ('n_rd_ports', 0), ('n_wr_ports', 0), ('latency', '5ns')]), 'action_name': 'write', 'arguments': {'data_delta': 0, 'address_delta': 0}}
+copy  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/default_SRAM.cfg  to  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-model.10_03_22_46_53_SRAM.cfg
+CACTI plug-in removing temp file:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-model.10_03_22_46_53_SRAM.cfg
+Info: CACTI plug-in... Querying CACTI for request:
  {'class_name': 'SRAM', 'attributes': OrderedDict([('technology', '45nm'), ('width', 16), ('depth', 64), ('n_rdwr_ports', 2), ('n_banks', 1), ('n_rd_ports', 0), ('n_wr_ports', 0), ('latency', '5ns')]), 'action_name': 'write', 'arguments': {'data_delta': 0, 'address_delta': 0}}
 WARN: CACTI Plug-in...  intended SRAM size is smaller than 64 words
 intended SRAM size: 128 block size: 4
 corrected SRAM size: 256
-copy  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/default_SRAM.cfg  to  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-model.10_03_22_43_24_SRAM.cfg
-CACTI plug-in removing temp file:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-model.10_03_22_43_24_SRAM.cfg
+copy  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/default_SRAM.cfg  to  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-model.10_03_22_46_54_SRAM.cfg
+CACTI plug-in removing temp file:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-model.10_03_22_46_54_SRAM.cfg
 Warn: No action counts are specified as yaml input 
 Info: flattened architecture is saved to: ./timeloop-model.flattened_architecture.yaml 
 Info: energy reference table is saved to: ./timeloop-model.ERT.yaml 

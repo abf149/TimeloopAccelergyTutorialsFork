@@ -41,12 +41,12 @@ Level 1
         Multiple buffering           : 1.00
         Effective data storage size  : 10240
         Min utilization              : 0.00
-        Vector read energy           : 130.32 pJ
-        Vector write energy          : 130.32 pJ
-        Vector metadata read energy  : 0.57 pJ
-        Vector metadata write energy : 0.57 pJ
+        Vector read energy           : 19.95 pJ
+        Vector write energy          : 15.11 pJ
+        Vector metadata read energy  : 0.01 pJ
+        Vector metadata write energy : 0.01 pJ
         (De)compression energy       : 0.00 pJ
-        Area                         : 156985.19 um^2
+        Area                         : 133576.50 um^2
 
     MAPPING
     -------
@@ -90,9 +90,9 @@ Level 1
         Scalar compression counts (per-cluster)                     : 0
         Temporal reductions (per-instance)                          : 56
         Address generations (per-cluster)                           : 128
-        Energy (per-scalar-access)                                  : 65.16 pJ
-        Energy (per-instance)                                       : 11989.81 pJ
-        Energy (total)                                              : 95918.46 pJ
+        Energy (per-scalar-access)                                  : 8.29 pJ
+        Energy (per-instance)                                       : 1525.81 pJ
+        Energy (total)                                              : 12206.46 pJ
         Temporal Reduction Energy (per-instance)                    : 0.00 pJ
         Temporal Reduction Energy (total)                           : 0.00 pJ
         Address Generation Energy (per-cluster)                     : 0.00 pJ
@@ -696,21 +696,21 @@ spBL <==> merge_queue
         Spatial Reduction Energy (per-instance) : 0.00 pJ
         Spatial Reduction Energy (total)        : 0.00 pJ
 
-Total topology energy: 166130.80 pJ
-Total topology area: 1302906.62 um^2
+Total topology energy: 82418.80 pJ
+Total topology area: 1115637.12 um^2
 Max topology cycles: 64
 
 Summary Stats
 -------------
 Utilization: 1.00
 Cycles: 64
-Energy: 0.17 uJ
-Area: 1.30 mm^2
+Energy: 0.08 uJ
+Area: 1.12 mm^2
 
 Algorithmic Computes = 512
 pJ/Algorithmic-Compute
     mac                   = 2.20
-    merge_queue           = 187.34
+    merge_queue           = 23.84
     spBL                  = 1.56
     spAL                  = 0.77
     DRAM                  = 132.60
@@ -718,12 +718,12 @@ pJ/Algorithmic-Compute
     merge_queue <==> mac  = 0.00
     spAL <==> spBL        = 0.00
     spBL <==> merge_queue = 0.00
-    Total                 = 324.47
+    Total                 = 160.97
 
 Actual Computes = 512
 pJ/Compute
     mac                   = 2.20
-    merge_queue           = 187.34
+    merge_queue           = 23.84
     spBL                  = 1.56
     spAL                  = 0.77
     DRAM                  = 132.60
@@ -731,5 +731,5 @@ pJ/Compute
     merge_queue <==> mac  = 0.00
     spAL <==> spBL        = 0.00
     spBL <==> merge_queue = 0.00
-    Total                 = 324.47
+    Total                 = 160.97
 

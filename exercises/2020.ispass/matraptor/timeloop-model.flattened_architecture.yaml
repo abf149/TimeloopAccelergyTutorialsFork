@@ -2,7 +2,7 @@ architecture:
   version: 0.3
   local:
   - name: system.matraptor.PE[0..7].merge_queue
-    class: smartbuffer_RF
+    class: smartbuffer_SRAM
     attributes:
       block-size: 1
       memory_depth: 10240
