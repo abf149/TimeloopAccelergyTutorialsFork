@@ -1,5 +1,5 @@
 mapper:
-  optimization-metrics: [ delay, energy ]
+  optimization-metrics: [ edp, delay, energy ]
   live-status: False
   num-threads: 8
   timeout: 15000

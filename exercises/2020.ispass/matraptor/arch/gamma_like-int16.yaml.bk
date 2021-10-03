@@ -9,7 +9,7 @@ architecture:
         - name: DRAM
           class: DRAM
           attributes:
-            type: HBM2
+            type: LPDDR4
             width: 64
             block-size: 4
             word-bits: 16
@@ -18,23 +18,23 @@ architecture:
           attributes:
             technology: 45nm
           local:
-            - name: spAL[0..7]
+            - name: spAL
               class: smartbuffer_SRAM
               attributes:
-                memory_depth: 64
-                memory_width: 16
-                n_banks: 1
-                block-size: 1
+                memory_depth: 16384
+                memory_width: 64
+                n_banks: 32
+                block-size: 4
                 word-bits: 16
                 read_bandwidth: 16
                 write_bandwidth: 16
-            - name: spBL[0..7]
+            - name: spBL
               class: smartbuffer_SRAM
               attributes:
-                memory_depth: 64
-                memory_width: 16
-                n_banks: 1
-                block-size: 1
+                memory_depth: 16384
+                memory_width: 64
+                n_banks: 32
+                block-size: 4
                 word-bits: 16
                 read_bandwidth: 16
                 write_bandwidth: 16
@@ -47,7 +47,7 @@ architecture:
 #                block-size: 1
 #                meshX: 14
           subtree:
-          - name: PE[0..7]
+          - name: PE
             local:
 #              - name: ifmap_spad
 #                class: smartbuffer_RF
@@ -84,4 +84,4 @@ architecture:
                 class: intmac
                 attributes:
                   datawidth: 16
-                  #meshX : 14
+                  meshX : 14
