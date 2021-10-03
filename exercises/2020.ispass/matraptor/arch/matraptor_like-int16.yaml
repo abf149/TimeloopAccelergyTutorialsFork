@@ -28,7 +28,7 @@ architecture:
                 word-bits: 16
                 read_bandwidth: 16
                 write_bandwidth: 16
-                meshX: 7                
+                meshX: 8                
             - name: spBL[0..7]
               class: smartbuffer_SRAM
               attributes:
@@ -39,7 +39,7 @@ architecture:
                 word-bits: 16
                 read_bandwidth: 16
                 write_bandwidth: 16
-                meshX: 7                
+                meshX: 8              
 #            - name: DummyBuffer[0..13] # for better mapping
 #              class: regfile
 #              attributes:
@@ -59,11 +59,11 @@ architecture:
 #                  update_fifo_depth: 2
                   block-size: 1
                   word-bits: 16
-                  meshX: 7
+                  meshX: 8
                   read_bandwidth: 16
                   write_bandwidth: 16
               - name: mac
                 class: intmac
                 attributes:
                   datawidth: 16
-                  meshX: 7
+                  meshX: 8
