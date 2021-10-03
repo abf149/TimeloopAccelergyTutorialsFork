@@ -61,19 +61,19 @@
 							<t_>0</t_>
 						</technology>
 						<size>
-							<t_>512</t_>
+							<t_>10240</t_>
 						</size>
 						<word_bits>
 							<t_>16</t_>
 						</word_bits>
 						<addr_gen_bits>
-							<t_>9</t_>
+							<t_>14</t_>
 						</addr_gen_bits>
 						<block_size>
 							<t_>1</t_>
 						</block_size>
 						<cluster_size>
-							<t_>1</t_>
+							<t_>2</t_>
 						</cluster_size>
 						<instances>
 							<t_>8</t_>
@@ -138,9 +138,9 @@
 						</utilized_instances>
 						<utilized_clusters>
 							<PerDataSpace>
-								<item>8</item>
-								<item>8</item>
-								<item>8</item>
+								<item>4</item>
+								<item>4</item>
+								<item>4</item>
 							</PerDataSpace>
 						</utilized_clusters>
 						<reads>
@@ -357,21 +357,21 @@
 							<PerDataSpace>
 								<item>-nan</item>
 								<item>-nan</item>
-								<item>4.37096000000000018e+00</item>
+								<item>6.51620000000000061e+01</item>
 							</PerDataSpace>
 						</energy_per_algorithmic_access>
 						<energy_per_access>
 							<PerDataSpace>
 								<item>-nan</item>
 								<item>-nan</item>
-								<item>4.37096000000000018e+00</item>
+								<item>6.51620000000000061e+01</item>
 							</PerDataSpace>
 						</energy_per_access>
 						<energy>
 							<PerDataSpace>
 								<item>0.00000000000000000e+00</item>
 								<item>0.00000000000000000e+00</item>
-								<item>8.04256640000000061e+02</item>
+								<item>1.19898080000000009e+04</item>
 							</PerDataSpace>
 						</energy>
 						<temporal_reduction_energy>
@@ -1484,7 +1484,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>1.27408083826022391e+02</t_>
+								<t_>4.03563288266808001e+02</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 						</specs_>
@@ -1745,7 +1745,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>1.17955499048833559e+02</t_>
+								<t_>4.00679432424924187e+02</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 						</specs_>
@@ -1865,7 +1865,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>1.07676272630046029e+02</t_>
+								<t_>3.97774669253837715e+02</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 						</specs_>

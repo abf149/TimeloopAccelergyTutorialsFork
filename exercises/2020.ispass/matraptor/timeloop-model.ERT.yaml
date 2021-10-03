@@ -32,45 +32,45 @@ ERT:
       arguments:
         address_delta: 0
         data_delta: 0
-      energy: 0.07216
+      energy: 0.60317
     - name: write
       arguments:
         address_delta: 0
         data_delta: 1
-      energy: 0.21024
+      energy: 0.87933
     - name: write
       arguments:
         address_delta: 1
         data_delta: 0
-      energy: 4.23288
+      energy: 130.04784
     - name: write
       arguments:
         address_delta: 1
         data_delta: 1
-      energy: 4.37096
+      energy: 130.324
     - name: read
       arguments:
         address_delta: 0
         data_delta: 0
-      energy: 0.07216
+      energy: 0.60317
     - name: read
       arguments:
         address_delta: 0
         data_delta: 1
-      energy: 0.21024
+      energy: 0.87933
     - name: read
       arguments:
         address_delta: 1
         data_delta: 0
-      energy: 4.23288
+      energy: 130.04784
     - name: read
       arguments:
         address_delta: 1
         data_delta: 1
-      energy: 4.37096
+      energy: 130.324
     - name: idle
       arguments: null
-      energy: 0.03526
+      energy: 0.56627
   - name: system.matraptor.spAL[0..7]
     actions:
     - name: write

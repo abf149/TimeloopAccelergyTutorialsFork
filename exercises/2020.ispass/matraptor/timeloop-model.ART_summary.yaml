@@ -8,7 +8,7 @@ ART_summary:
     area: 0
     primitive_estimations: Cacti
   - name: system.matraptor.PE[0..7].merge_queue
-    area: 10354.68
+    area: 313970.36
     primitive_estimations:
     - name: storage
       estimator: Aladdin_table

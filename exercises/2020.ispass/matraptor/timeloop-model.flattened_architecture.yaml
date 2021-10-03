@@ -5,8 +5,8 @@ architecture:
     class: smartbuffer_RF
     attributes:
       block-size: 1
-      memory_depth: 512
-      memory_width: 16
+      memory_depth: 10240
+      memory_width: 32
       meshX: 8
       n_banks: 1
       n_buffets: 1
