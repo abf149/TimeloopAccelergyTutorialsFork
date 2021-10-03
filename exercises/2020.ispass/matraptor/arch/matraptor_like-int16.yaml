@@ -28,7 +28,7 @@ architecture:
                 word-bits: 16
                 read_bandwidth: 16
                 write_bandwidth: 16
-                meshX : 7                
+                meshX: 7                
             - name: spBL[0..7]
               class: smartbuffer_SRAM
               attributes:
@@ -39,7 +39,7 @@ architecture:
                 word-bits: 16
                 read_bandwidth: 16
                 write_bandwidth: 16
-                meshX : 7                
+                meshX: 7                
 #            - name: DummyBuffer[0..13] # for better mapping
 #              class: regfile
 #              attributes:
@@ -51,26 +51,6 @@ architecture:
           subtree:
           - name: PE[0..7]
             local:
-#              - name: ifmap_spad
-#                class: smartbuffer_RF
-#                attributes:
-#                  memory_depth: 12
-#                  memory_width: 16
-#                  block-size: 1
-#                  word-bits: 16
-#                  meshX: 14
-#                  read_bandwidth: 2
-#                  write_bandwidth: 2
-#              - name: weights_spad
-#                class: smartbuffer_RF
-#                attributes:
-#                  memory_depth: 192
-#                  memory_width: 16
-#                  block-size: 1
-#                  word-bits: 16
-#                  meshX: 14
-#                  read_bandwidth: 2
-#                  write_bandwidth: 2
               - name: merge_queue
                 class: smartbuffer_RF
                 attributes:
@@ -86,4 +66,4 @@ architecture:
                 class: intmac
                 attributes:
                   datawidth: 16
-                  meshX : 7
+                  meshX: 7

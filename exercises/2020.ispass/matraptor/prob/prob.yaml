@@ -4,9 +4,6 @@ problem:
     K: 8
     N: 8
   shape:
-#    coefficients:
-#    - default: 1
-#      name: Wstride
     data-spaces:
     - name: A
       projection:
