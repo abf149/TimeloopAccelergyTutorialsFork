@@ -29,8 +29,8 @@ Info: CACTI plug-in... Querying CACTI for request:
 WARN: CACTI Plug-in...  intended SRAM size is smaller than 64 words
 intended SRAM size: 128 block size: 4
 corrected SRAM size: 256
-copy  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/default_SRAM.cfg  to  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-model.10_03_19_43_13_SRAM.cfg
-CACTI plug-in removing temp file:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-model.10_03_19_43_13_SRAM.cfg
+copy  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/default_SRAM.cfg  to  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-model.10_03_19_56_32_SRAM.cfg
+CACTI plug-in removing temp file:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-model.10_03_19_56_32_SRAM.cfg
 Warn: No action counts are specified as yaml input 
 Info: flattened architecture is saved to: ./timeloop-model.flattened_architecture.yaml 
 Info: energy reference table is saved to: ./timeloop-model.ERT.yaml 
