@@ -33,3 +33,7 @@ mapping:
     type: temporal
     permutation: NK
     factors: K=1 N=8
+  - target: merge_queue
+    type: temporal
+    permutation: NKM
+#    factors: K=1 N=8
