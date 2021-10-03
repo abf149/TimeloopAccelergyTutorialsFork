@@ -1,8 +1,8 @@
 problem:
   instance:
-    M: 128
-    K: 128
-    N: 128
+    M: 8
+    K: 8
+    N: 8
   shape:
 #    coefficients:
 #    - default: 1
