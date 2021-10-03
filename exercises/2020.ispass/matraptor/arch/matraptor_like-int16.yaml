@@ -54,8 +54,8 @@ architecture:
               - name: merge_queue
                 class: smartbuffer_RF
                 attributes:
-                  memory_depth: 512
-                  memory_width: 16
+                  memory_depth: 10240
+                  memory_width: 32
 #                  update_fifo_depth: 2
                   block-size: 1
                   word-bits: 16
