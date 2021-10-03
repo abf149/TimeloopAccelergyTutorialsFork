@@ -28,11 +28,11 @@ mapping:
   - target: spAL
     type: temporal
     permutation: KM
-    factors: M=1 K=1
+    factors: M=1 K=1 N=1
   - target: spBL
     type: temporal
     permutation: NK
-    factors: K=1 N=8
+    factors: M=1 K=1 N=8
   - target: merge_queue
     type: temporal
     permutation: NKM
