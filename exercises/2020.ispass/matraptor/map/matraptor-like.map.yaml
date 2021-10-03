@@ -36,4 +36,4 @@ mapping:
   - target: merge_queue
     type: temporal
     permutation: NKM
-    factors: M=1 N=8
+    factors: M=1 K=1 N=8
