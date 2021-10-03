@@ -5,7 +5,7 @@
 #                constraints/*.yaml
 
 
-timeloop-model arch/matraptor_like-int16.yaml prob/*
+timeloop-model arch/matraptor_like-int16.yaml prob/prob.yaml
 
 
 
