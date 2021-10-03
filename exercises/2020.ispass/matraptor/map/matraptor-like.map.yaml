@@ -1,9 +1,4 @@
 mapping:
-#  - target: Buffer
-#    type: temporal
-#    factors: R=3 P=16
-#    permutation: RP
-  targets:
   # Systolic array with spAL loading A and spBL loading B conditionally based on spAL input
   - target: spAL
     type: bypass
