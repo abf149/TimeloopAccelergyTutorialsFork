@@ -15,11 +15,11 @@ mapping:
   # Enforce A-stationary
   - target: DRAM
     type: temporal
-    permutation: NK
-    factors: K=8 N=1
+    permutation: NKM
+    factors: M=1 K=8 N=1
   - target: DRAM
     type: spatial
-#    permutation: KM
+    permutation: NKM
     factors: M=8 K=1 N=1
   # No fan-out from spAL; permutations and factors should not matter
 #  - target: spAL
@@ -27,11 +27,11 @@ mapping:
 #    split: 1
   - target: spAL
     type: temporal
-    permutation: KM
+    permutation: NKM
     factors: M=1 K=1 N=1
   - target: spBL
     type: temporal
-    permutation: NK
+    permutation: NKM
     factors: M=1 K=1 N=8
   - target: merge_queue
     type: temporal
