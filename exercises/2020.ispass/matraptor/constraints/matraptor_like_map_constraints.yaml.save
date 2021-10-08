@@ -1,0 +1,23 @@
+#
+# The following constraints are not limitations of the hardware architecture and dataflow,
+# but help limit the search space to speed up search
+#
+
+mapspace_constraints:
+  targets:
+  # Enforce A-stationary
+  - target: spAL
+    type: temporal
+    
+# permutation: IJK # Leave permutation as a map constraint
+    #factors: I=1
+  - target: spBL
+    type: temporal
+    permutation: IJK # Leave permutation as a map constraint
+    #factors: I=1
+
+    # intuitive optimization to reduce map space size
+#    - target: DRAM
+#      type: temporal
+#      permutation: RSP CMNQ
+#      factors: R=1 S=1 P=1
