@@ -5,8 +5,8 @@ architecture:
     class: smartbuffer_SRAM
     attributes:
       block-size: 1
-      memory_depth: 10240
-      memory_width: 32
+      memory_depth: 1024
+      memory_width: 320
       meshX: 8
       n_banks: 1
       n_buffets: 1

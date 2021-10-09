@@ -6,7 +6,7 @@ ART:
   - name: system.DRAM
     area: 0
   - name: system.matraptor.PE[0..7].merge_queue
-    area: 267153.0
+    area: 277669.0
   - name: system.matraptor.spAL[0..7]
     area: 2319.32
   - name: system.matraptor.spBL[0..7]

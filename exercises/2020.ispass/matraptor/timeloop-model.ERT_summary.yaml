@@ -28,15 +28,15 @@ ERT_summary:
   - name: system.matraptor.PE[0..7].merge_queue
     actions:
     - name: write
-      average_energy: 7.5806
-      max_energy: 15.1107
-      min_energy: 0.0505
+      average_energy: 44.66021
+      max_energy: 89.2695
+      min_energy: 0.05093
     - name: read
-      average_energy: 10.00245
-      max_energy: 19.9544
-      min_energy: 0.0505
+      average_energy: 24.88791
+      max_energy: 49.7249
+      min_energy: 0.05093
     - name: idle
-      energy: 0.0136
+      energy: 0.01403
     primitive_estimation(s):
     - name: storage
       estimator: Cacti

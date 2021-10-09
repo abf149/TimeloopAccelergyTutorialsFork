@@ -28,25 +28,25 @@ Level 1
     SPECS
     -----
         Technology                   : SRAM
-        Data storage size            : 10240
+        Data storage size            : 1024
         Data word bits               : 16
         Data block size              : 1
         Metadata storage size        : 0
         Metadata word bits           : 0
         Metadata block size          : 1
-        Cluster size                 : 2
+        Cluster size                 : 20
         Instances                    : 8 (8*1)
         Read bandwidth               : 16.00
         Write bandwidth              : 16.00
         Multiple buffering           : 1.00
-        Effective data storage size  : 10240
+        Effective data storage size  : 1024
         Min utilization              : 0.00
-        Vector read energy           : 19.95 pJ
-        Vector write energy          : 15.11 pJ
+        Vector read energy           : 49.72 pJ
+        Vector write energy          : 89.27 pJ
         Vector metadata read energy  : 0.01 pJ
         Vector metadata write energy : 0.01 pJ
         (De)compression energy       : 0.00 pJ
-        Area                         : 133576.50 um^2
+        Area                         : 13883.45 um^2
 
     MAPPING
     -------
@@ -64,7 +64,7 @@ Level 1
         Metadata format                                             : none
         Max utilized metadata storage capacity                      : 0
         Utilized instances (max)                                    : 8
-        Utilized clusters (max)                                     : 4
+        Utilized clusters (max)                                     : 0
         Algorithmic scalar reads (per-instance)                     : 56
         Actual scalar reads (per-instance)                          : 56
         Gated scalar reads (per-instance)                           : 0
@@ -90,9 +90,9 @@ Level 1
         Scalar compression counts (per-cluster)                     : 0
         Temporal reductions (per-instance)                          : 56
         Address generations (per-cluster)                           : 128
-        Energy (per-scalar-access)                                  : 8.29 pJ
-        Energy (per-instance)                                       : 1525.81 pJ
-        Energy (total)                                              : 12206.46 pJ
+        Energy (per-scalar-access)                                  : 0.00 pJ
+        Energy (per-instance)                                       : 0.00 pJ
+        Energy (total)                                              : 0.00 pJ
         Temporal Reduction Energy (per-instance)                    : 0.00 pJ
         Temporal Reduction Energy (total)                           : 0.00 pJ
         Address Generation Energy (per-cluster)                     : 0.00 pJ
@@ -696,21 +696,21 @@ spBL <==> merge_queue
         Spatial Reduction Energy (per-instance) : 0.00 pJ
         Spatial Reduction Energy (total)        : 0.00 pJ
 
-Total topology energy: 82418.80 pJ
-Total topology area: 1115637.12 um^2
+Total topology energy: 70212.34 pJ
+Total topology area: 158092.72 um^2
 Max topology cycles: 64
 
 Summary Stats
 -------------
 Utilization: 1.00
 Cycles: 64
-Energy: 0.08 uJ
-Area: 1.12 mm^2
+Energy: 0.07 uJ
+Area: 0.16 mm^2
 
 Algorithmic Computes = 512
 pJ/Algorithmic-Compute
     mac                   = 2.20
-    merge_queue           = 23.84
+    merge_queue           = 0.00
     spBL                  = 1.56
     spAL                  = 0.77
     DRAM                  = 132.60
@@ -718,12 +718,12 @@ pJ/Algorithmic-Compute
     merge_queue <==> mac  = 0.00
     spAL <==> spBL        = 0.00
     spBL <==> merge_queue = 0.00
-    Total                 = 160.97
+    Total                 = 137.13
 
 Actual Computes = 512
 pJ/Compute
     mac                   = 2.20
-    merge_queue           = 23.84
+    merge_queue           = 0.00
     spBL                  = 1.56
     spAL                  = 0.77
     DRAM                  = 132.60
@@ -731,5 +731,5 @@ pJ/Compute
     merge_queue <==> mac  = 0.00
     spAL <==> spBL        = 0.00
     spBL <==> merge_queue = 0.00
-    Total                 = 160.97
+    Total                 = 137.13
 
