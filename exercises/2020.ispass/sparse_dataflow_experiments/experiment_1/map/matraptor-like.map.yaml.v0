@@ -17,6 +17,10 @@ mapping:
     type: spatial
     permutation: NKM
     factors: M=8 K=1 N=1
+  # No fan-out from spAL; permutations and factors should not matter
+#  - target: spAL
+#    type: spatial
+#    split: 1
   - target: merge_queue
     type: temporal
     permutation: NKM

@@ -17,9 +17,22 @@ architecture:
         - name: matraptor
           attributes:
             technology: 45nm
+          local:
+            - name: spAL[0..7]
+              class: smartbuffer_SRAM
+              attributes:
+                memory_depth: 1
+                memory_width: 16
+                n_banks: 1
+                block-size: 1
+                word-bits: 16
+                read_bandwidth: 16
+                write_bandwidth: 16
+                meshX: 8                
           subtree:
           - name: PE[0..7]
             local:
+              # Model 10 PE-local merge queues, 32-bits wide each
               - name: merge_queue
                 class: smartbuffer_SRAM
                 attributes:
@@ -29,27 +42,7 @@ architecture:
                   word-bits: 16
                   meshX: 8
                   read_bandwidth: 16
-                  write_bandwidth: 16            
-              # Model 10 PE-local merge queues, 32-bits wide each
-#              - name: DummyBuffer # for better mapping
-#                class: regfile
-#                attributes:
-#                  depth: 16
-#                  width: 16
-#                  word-bits: 16
-#                  block-size: 1
-#                  meshX: 14              
-              - name: spAL
-                class: smartbuffer_SRAM
-                attributes:
-                  memory_depth: 1
-                  memory_width: 16
-                  n_banks: 1
-                  block-size: 1
-                  word-bits: 16
-                  read_bandwidth: 16
                   write_bandwidth: 16
-                  meshX: 8              
               - name: mac
                 class: intmac
                 attributes:

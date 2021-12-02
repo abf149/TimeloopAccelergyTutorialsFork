@@ -1,0 +1,25 @@
+problem:
+  instance:
+    M: 8
+    K: 8
+    N: 8
+  shape:
+    data-spaces:
+    - name: A
+      projection:
+      - - - M
+      - - - K
+    - name: B
+      projection:
+      - - - K
+      - - - N
+    - name: C
+      projection:
+      - - - M
+      - - - N
+      read-write: true
+    dimensions:
+    - M
+    - K
+    - N
+    name: GEMM
