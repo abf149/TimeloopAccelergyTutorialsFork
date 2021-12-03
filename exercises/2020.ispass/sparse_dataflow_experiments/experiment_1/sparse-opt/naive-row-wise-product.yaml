@@ -6,16 +6,45 @@ sparse_optimizations:
           - name: A
             ranks:           # no tiling on A, so two ranks needed
               - format: UOP
+              - format: UOP
+              - format: UOP
+              - format: UOP
               - format: CP
           - name: B          # pretiling is required, so B's is represented with 3 ranks
             ranks:
+              - format: UOP            
               - format: UOP
               - format: UOP
               - format: CP
+          - name: Z          # pretiling is required, so B's is represented with 3 ranks
+            ranks:
+              - format: UOP            
+              - format: UOP            
+              - format: UOP
+              - format: UOP
+              - format: CP               
+
+      action-optimization:
+#        - type: skipping
+#          options:
+#            - target: A
+#              condition-on: [ B ]
+        - type: skipping
+          options:
+            - target: B
+              condition-on: [ A ]
+        - type: skipping
+          options:
+            - target: Z
+              condition-on: [ A, B ]
 
     - name: Buffer
       representation-format:
         data-spaces:
+          - name: Z
+            ranks:          # each tile of B requires two ranks only
+              - format: UOP
+              - format: CP        
           - name: B
             ranks:          # each tile of B requires two ranks only
               - format: UOP
@@ -26,10 +55,10 @@ sparse_optimizations:
               - format: CP
 
       action-optimization:
-        - type: skipping
-          options:
-            - target: A
-              condition-on: [ B ]
+#        - type: skipping
+#          options:
+#            - target: A
+#              condition-on: [ B ]
         - type: skipping
           options:
             - target: B

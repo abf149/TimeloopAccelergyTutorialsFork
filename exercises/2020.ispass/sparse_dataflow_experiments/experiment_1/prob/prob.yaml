@@ -20,13 +20,13 @@ problem:
         read-write: True
 
   instance:
-    M: 8
-    K: 8
-    N: 8
+    M: 512
+    K: 512
+    N: 512
     densities:
       A:
         distribution: fixed-structured
         density: 0.25
       B:
         distribution: fixed-structured
-        density: 0.5
+        density: 0.5    

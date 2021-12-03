@@ -1,6 +1,6 @@
 mapping:
 
-  - target: BackingStorage
+  - target: glb
     type: bypass
     bypass: []
     keep: [A,B,Z]
@@ -11,16 +11,20 @@ mapping:
     keep: [A,Z]
 
   - target: BackingStorage
-    type: temporal
-    factors: K=256 M=2 N=256
-    permutation: NKM
+    type: bypass
+    bypass: []
+    keep: [A,B,Z]
 
   - target: BackingStorage
     type: spatial
-    factors: M=256 K=1 N=1    
+    permutation: NKM
+    factors: M=256 K=1 N=1
+
+  - target: BackingStorage
+    type: temporal
     permutation: NKM
 
   - target: Buffer
     type: temporal
-    factors: K=2 M=1 N=2
     permutation: NKM
+    factors: M=1
