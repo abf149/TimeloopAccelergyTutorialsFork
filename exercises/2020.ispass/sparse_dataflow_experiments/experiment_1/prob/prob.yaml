@@ -26,7 +26,10 @@ problem:
     densities:
       A:
         distribution: fixed-structured
-        density: 0.25
+        density: 0.01
       B:
         distribution: fixed-structured
-        density: 0.5    
+        density: 0.01    
+      Z:
+        distribution: fixed-structured
+        density: 0.02   

@@ -12,7 +12,7 @@ ART_summary:
     - name: metadata_storage
       estimator: Aladdin_table
   - name: system.BackingStorage
-    area: 27420736.42
+    area: 52089443.92
     primitive_estimations:
     - name: storage
       estimator: Cacti

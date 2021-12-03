@@ -40,21 +40,21 @@ ERT_summary:
   - name: system.BackingStorage
     actions:
     - name: write
-      energy: 159.451
+      energy: 59.9626
     - name: read
-      energy: 183.17
+      energy: 86.7563
     - name: gated_write
-      energy: 0.22331
+      energy: 0.11608
     - name: gated_read
-      energy: 0.22331
+      energy: 0.11608
     - name: metadata_read
-      energy: 6288.13053
+      energy: 19015.3064
     - name: metadata_write
-      energy: 6288.13053
+      energy: 19015.3064
     - name: gated_metadata_read
-      energy: 26.24612
+      energy: 79.36558
     - name: gated_metadata_write
-      energy: 26.24612
+      energy: 79.36558
     primitive_estimation(s):
     - name: storage
       estimator: Cacti

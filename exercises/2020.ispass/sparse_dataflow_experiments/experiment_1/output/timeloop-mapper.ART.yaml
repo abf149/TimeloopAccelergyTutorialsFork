@@ -6,4 +6,4 @@ ART:
   - name: system.PE[0..255].Buffer
     area: 9031.76
   - name: system.BackingStorage
-    area: 27420736.42
+    area: 52089443.92

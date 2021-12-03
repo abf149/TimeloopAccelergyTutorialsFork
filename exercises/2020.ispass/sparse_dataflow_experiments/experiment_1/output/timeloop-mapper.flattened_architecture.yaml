@@ -10,7 +10,7 @@ architecture:
       data_storage_depth: 256
       data_storage_width: 8
       datawidth: 8
-      meshX: 16
+      meshX: 256
       metadata_datawidth: 4
       metadata_storage_depth: 256
       metadata_storage_width: 4
@@ -26,19 +26,19 @@ architecture:
     attributes:
       datawidth: 8
       latency: 5ns
-      meshX: 16
+      meshX: 256
       num_pipeline_stages: 2
       technology: 45nm
   - name: system.BackingStorage
     class: SRAM_metadata
     attributes:
-      ag_datawidth: 19
+      ag_datawidth: 20
       counter_width: 0
-      data_storage_depth: 500000
-      data_storage_width: 32
+      data_storage_depth: 1048576
+      data_storage_width: 8
       datawidth: 8
       metadata_datawidth: 4
-      metadata_storage_depth: 365000
+      metadata_storage_depth: 1048576
       metadata_storage_width: 4
       n_banks: 1
       n_rdwr_ports: 2

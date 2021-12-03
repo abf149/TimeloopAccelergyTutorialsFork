@@ -35,7 +35,7 @@ architecture:
               metadata_datawidth: 4
               read_bandwidth: 3
               write_bandwidth: 3
-              meshX: 16             
+              meshX: 256             
   
           - name: MAC
             class: compute
@@ -43,4 +43,4 @@ architecture:
             attributes:
               technology: 45nm                 
               datawidth: 8
-              meshX: 16
+              meshX: 256

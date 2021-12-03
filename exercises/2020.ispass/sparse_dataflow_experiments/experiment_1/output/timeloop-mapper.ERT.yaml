@@ -45,25 +45,25 @@ ERT:
     actions:
     - name: write
       arguments: null
-      energy: 159.451
+      energy: 59.9626
     - name: read
       arguments: null
-      energy: 183.17
+      energy: 86.7563
     - name: gated_write
       arguments: null
-      energy: 0.22331
+      energy: 0.11608
     - name: gated_read
       arguments: null
-      energy: 0.22331
+      energy: 0.11608
     - name: metadata_read
       arguments: null
-      energy: 6288.13053
+      energy: 19015.3064
     - name: metadata_write
       arguments: null
-      energy: 6288.13053
+      energy: 19015.3064
     - name: gated_metadata_read
       arguments: null
-      energy: 26.24612
+      energy: 79.36558
     - name: gated_metadata_write
       arguments: null
-      energy: 26.24612
+      energy: 79.36558
