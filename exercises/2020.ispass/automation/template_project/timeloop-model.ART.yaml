@@ -1,0 +1,11 @@
+ART:
+  version: 0.3
+  tables:
+  - name: system.matraptor.PE[0..7].mac
+    area: 1239.5
+  - name: system.DRAM
+    area: 0
+  - name: system.matraptor.PE[0..7].merge_queue
+    area: 277669.0
+  - name: system.matraptor.PE[0..7].spAL
+    area: 274.68

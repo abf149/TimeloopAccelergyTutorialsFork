@@ -1,0 +1,27 @@
+mapping:
+  # Systolic array with spAL loading A and spBL loading B conditionally based on spAL input
+  - target: spAL
+    type: bypass
+    bypass: [B,C]
+    keep: [A]
+  - target: merge_queue
+    type: bypass
+    bypass: [A,B]
+    keep: [C]
+  # Enforce A-stationary
+  - target: DRAM
+    type: temporal
+    permutation: NKM
+    factors: M=1 K=1 N=1
+  - target: DRAM
+    type: spatial
+    permutation: NKM
+    factors: M=8 K=1 N=1
+  - target: merge_queue
+    type: temporal
+    permutation: NKM
+    factors: M=1 K=8 N=1
+  - target: spAL
+    type: temporal
+    permutation: NKM
+    factors: M=1 K=1 N=8
