@@ -27,10 +27,10 @@ architecture:
             subclass: regfile_metadata
             attributes:
               technology: 45nm                 
-              data_storage_depth: 256
+              data_storage_depth: 512
               data_storage_width: 8
               datawidth: 8
-              metadata_storage_depth: 256
+              metadata_storage_depth: 512
               metadata_storage_width: 4
               metadata_datawidth: 4
               read_bandwidth: 3

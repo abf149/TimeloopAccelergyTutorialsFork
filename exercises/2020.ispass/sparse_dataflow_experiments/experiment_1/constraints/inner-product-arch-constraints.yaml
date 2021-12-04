@@ -1,0 +1,39 @@
+architecture_constraints:
+  targets:
+
+
+# Inner-product
+
+  - target: BackingStorage
+    type: bypass
+    bypass: []
+    keep: [A,B,Z]
+
+#  - target: Buffer
+#    type: bypass
+#    bypass: [B]
+#    keep: [A,Z]
+
+  - target: BackingStorage
+    type: spatial
+    split: 256
+    permutation: KNM
+#    factors: K=1 N=1
+
+  - target: Buffer
+    type: temporal
+    permutation: KNM
+#    factors: N=128
+
+  - target: BackingStorage
+    type: temporal
+    permutation: KNM
+#    factors: M=2   
+
+# Outer-product
+
+# Naive row-wise product
+
+   
+
+  

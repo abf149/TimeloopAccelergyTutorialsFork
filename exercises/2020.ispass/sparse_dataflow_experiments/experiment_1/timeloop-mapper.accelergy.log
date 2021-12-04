@@ -10,7 +10,7 @@ Info: generating outputs according to the following specified output flags...
 {'ERT': 1, 'ERT_summary': 1, 'ART': 1, 'ART_summary': 1, 'energy_estimation': 1, 'flattened_arch': 1}
 Warn: Cannot recognize the top key "problem" in file prob/prob.yaml 
 Warn: Cannot recognize the top key "mapper" in file mapper/mapper.yaml 
-Warn: Cannot recognize the top key "architecture_constraints" in file constraints/naive-row-wise-product-arch-constraints.yaml 
+Warn: Cannot recognize the top key "architecture_constraints" in file constraints/outer-product-arch-constraints.yaml 
 Warn: Cannot recognize the top key "sparse_optimizations" in file sparse-opt/naive-row-wise-product.yaml 
 Info: Parsing file arch/sparse-exporation-architecture.yaml for architecture info 
 Info: Parsing file arch/components/SRAM_metadata.yaml for compound_components info 
@@ -31,8 +31,8 @@ Info: estimator plug-in identified by:  /usr/local/share/accelergy/estimation_pl
 table-based-plug-ins Identifies a set of tables named:  test_tables
 Info: CACTI plug-in... Querying CACTI for request:
  {'class_name': 'SRAM', 'attributes': OrderedDict([('technology', '45nm'), ('width', 8), ('depth', 1048576.0), ('datawidth', 8), ('n_rdwr_ports', 2), ('n_banks', 1), ('avg_sparsity', 'avg_sparsity'), ('n_rd_ports', 0), ('n_wr_ports', 0), ('latency', '5ns')]), 'action_name': 'write', 'arguments': None}
-copy  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/default_SRAM.cfg  to  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-mapper.12_03_05_34_00_SRAM.cfg
-CACTI plug-in removing temp file:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-mapper.12_03_05_34_00_SRAM.cfg
+copy  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/default_SRAM.cfg  to  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-mapper.12_04_01_20_00_SRAM.cfg
+CACTI plug-in removing temp file:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-mapper.12_04_01_20_00_SRAM.cfg
 Warn: No action counts are specified as yaml input 
 Info: flattened architecture is saved to: output//timeloop-mapper.flattened_architecture.yaml 
 Info: energy reference table is saved to: output//timeloop-mapper.ERT.yaml 

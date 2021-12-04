@@ -17,21 +17,21 @@ ERT_summary:
   - name: system.PE[0..255].Buffer
     actions:
     - name: write
-      energy: 1.92896
+      energy: 4.25016
     - name: read
-      energy: 1.92896
+      energy: 4.25016
     - name: gated_write
-      energy: 0.01071
+      energy: 0.0204
     - name: gated_read
-      energy: 0.01071
+      energy: 0.0204
     - name: metadata_read
-      energy: 1.89296
+      energy: 4.21416
     - name: metadata_write
-      energy: 1.89296
+      energy: 4.21416
     - name: gated_metadata_read
-      energy: 0.00923
+      energy: 0.01892
     - name: gated_metadata_write
-      energy: 0.00923
+      energy: 0.01892
     primitive_estimation(s):
     - name: storage
       estimator: Aladdin_table

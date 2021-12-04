@@ -5,14 +5,14 @@ architecture:
     class: storage
     subclass: regfile_metadata
     attributes:
-      ag_datawidth: 8
+      ag_datawidth: 9
       counter_width: 0
-      data_storage_depth: 256
+      data_storage_depth: 512
       data_storage_width: 8
       datawidth: 8
       meshX: 256
       metadata_datawidth: 4
-      metadata_storage_depth: 256
+      metadata_storage_depth: 512
       metadata_storage_width: 4
       n_banks: 1
       n_rdwr_ports: 2

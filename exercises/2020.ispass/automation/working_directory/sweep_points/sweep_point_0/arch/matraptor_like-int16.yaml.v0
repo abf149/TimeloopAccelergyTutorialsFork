@@ -1,0 +1,61 @@
+architecture:
+  # ============================================================
+  # Architecture Description
+  # ============================================================
+  version: 0.3
+  subtree:
+    - name: system
+      local:
+        - name: DRAM
+          class: DRAM
+          attributes:
+            type: HBM2
+            width: 64
+            block-size: 4
+            word-bits: 16
+      subtree:
+        - name: matraptor
+          attributes:
+            technology: 45nm
+          local:
+            - name: spAL[0..7]
+              class: smartbuffer_SRAM
+              attributes:
+                memory_depth: 64
+                memory_width: 16
+                n_banks: 1
+                block-size: 1
+                word-bits: 16
+                read_bandwidth: 16
+                write_bandwidth: 16
+                meshX: 8                
+            - name: spBL[0..7]
+              class: smartbuffer_SRAM
+              attributes:
+                memory_depth: 64
+                memory_width: 16
+                n_banks: 1
+                block-size: 1
+                word-bits: 16
+                read_bandwidth: 16
+                write_bandwidth: 16
+                meshX: 8              
+          subtree:
+          - name: PE[0..7]
+            local:
+              # Model 10 PE-local merge queues, 32-bits wide each
+              - name: merge_queue
+                class: smartbuffer_SRAM
+                attributes:
+                  memory_depth: 1024
+                  memory_width: 320
+                  block-size: 1
+                  word-bits: 16
+                  meshX: 8
+                  read_bandwidth: 16
+                  write_bandwidth: 16
+              - name: mac
+                class: intmac
+                attributes:
+                  datawidth: 16
+                  meshX: 8
