@@ -1,0 +1,46 @@
+architecture:
+  version: 0.3
+
+  subtree:
+    - name: system
+      attributes:
+        technology: 45nm
+      local:
+      - name: BackingStorage 
+        class: SRAM_metadata
+        attributes:
+          technology: 45nm     
+          data_storage_depth: 1048576
+          data_storage_width: 8           
+          datawidth: 8
+          metadata_storage_depth: 1048576
+          metadata_storage_width: 4
+          metadata_datawidth: 4           
+              
+      subtree:            
+      - name: PE[0..255]
+        attributes:
+          technology: 45nm      
+        local:
+          - name: Buffer
+            class: storage
+            subclass: regfile_metadata
+            attributes:
+              technology: 45nm                 
+              data_storage_depth: 512
+              data_storage_width: 8
+              datawidth: 8
+              metadata_storage_depth: 512
+              metadata_storage_width: 4
+              metadata_datawidth: 4
+              read_bandwidth: 3
+              write_bandwidth: 3
+              meshX: 256             
+  
+          - name: MAC
+            class: compute
+            subclass: intmac
+            attributes:
+              technology: 45nm                 
+              datawidth: 8
+              meshX: 256

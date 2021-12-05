@@ -1,0 +1,62 @@
+ERT_summary:
+  version: 0.3
+  table_summary:
+  - name: system.PE[0..255].MAC
+    actions:
+    - name: mac_random
+      energy: 0.5608
+    - name: mac_reused
+      energy: 0.47989
+    - name: mac_gated
+      energy: 0.03642
+    - name: idle
+      energy: 0.01797
+    primitive_estimation(s):
+    - name: system.PE[0..255].MAC
+      estimator: Aladdin_table
+  - name: system.PE[0..255].Buffer
+    actions:
+    - name: write
+      energy: 4.25016
+    - name: read
+      energy: 4.25016
+    - name: gated_write
+      energy: 0.0204
+    - name: gated_read
+      energy: 0.0204
+    - name: metadata_read
+      energy: 4.21416
+    - name: metadata_write
+      energy: 4.21416
+    - name: gated_metadata_read
+      energy: 0.01892
+    - name: gated_metadata_write
+      energy: 0.01892
+    primitive_estimation(s):
+    - name: storage
+      estimator: Aladdin_table
+    - name: metadata_storage
+      estimator: Aladdin_table
+  - name: system.BackingStorage
+    actions:
+    - name: write
+      energy: 59.9626
+    - name: read
+      energy: 86.7563
+    - name: gated_write
+      energy: 0.11608
+    - name: gated_read
+      energy: 0.11608
+    - name: metadata_read
+      energy: 19015.3064
+    - name: metadata_write
+      energy: 19015.3064
+    - name: gated_metadata_read
+      energy: 79.36558
+    - name: gated_metadata_write
+      energy: 79.36558
+    primitive_estimation(s):
+    - name: storage
+      estimator: Cacti
+    - name: metadata_storage
+      estimator: Aladdin_table
