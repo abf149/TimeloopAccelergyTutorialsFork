@@ -1,0 +1,167 @@
+../output_0.01_bitmask.skip/timeloop-mapper.stats.txt:Summary Stats
+../output_0.01_bitmask.skip/timeloop-mapper.stats.txt--------------
+../output_0.01_bitmask.skip/timeloop-mapper.stats.txt-Utilization: 0.00
+../output_0.01_bitmask.skip/timeloop-mapper.stats.txt-Cycles: 143456
+../output_0.01_bitmask.skip/timeloop-mapper.stats.txt-Energy: 0.24 uJ
+../output_0.01_bitmask.skip/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.01_bitmask/timeloop-mapper.stats.txt:Summary Stats
+../output_0.01_bitmask/timeloop-mapper.stats.txt--------------
+../output_0.01_bitmask/timeloop-mapper.stats.txt-Utilization: 0.00
+../output_0.01_bitmask/timeloop-mapper.stats.txt-Cycles: 2113536
+../output_0.01_bitmask/timeloop-mapper.stats.txt-Energy: 0.17 uJ
+../output_0.01_bitmask/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.01_coo/timeloop-mapper.stats.txt:Summary Stats
+../output_0.01_coo/timeloop-mapper.stats.txt--------------
+../output_0.01_coo/timeloop-mapper.stats.txt-Utilization: 0.01
+../output_0.01_coo/timeloop-mapper.stats.txt-Cycles: 34056
+../output_0.01_coo/timeloop-mapper.stats.txt-Energy: 0.09 uJ
+../output_0.01_coo/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.02_bitmask.skip/timeloop-mapper.stats.txt:Summary Stats
+../output_0.02_bitmask.skip/timeloop-mapper.stats.txt--------------
+../output_0.02_bitmask.skip/timeloop-mapper.stats.txt-Utilization: 0.01
+../output_0.02_bitmask.skip/timeloop-mapper.stats.txt-Cycles: 152208
+../output_0.02_bitmask.skip/timeloop-mapper.stats.txt-Energy: 0.26 uJ
+../output_0.02_bitmask.skip/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.02_bitmask/timeloop-mapper.stats.txt:Summary Stats
+../output_0.02_bitmask/timeloop-mapper.stats.txt--------------
+../output_0.02_bitmask/timeloop-mapper.stats.txt-Utilization: 0.00
+../output_0.02_bitmask/timeloop-mapper.stats.txt-Cycles: 2113536
+../output_0.02_bitmask/timeloop-mapper.stats.txt-Energy: 0.20 uJ
+../output_0.02_bitmask/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.02_coo/timeloop-mapper.stats.txt:Summary Stats
+../output_0.02_coo/timeloop-mapper.stats.txt--------------
+../output_0.02_coo/timeloop-mapper.stats.txt-Utilization: 0.01
+../output_0.02_coo/timeloop-mapper.stats.txt-Cycles: 58124
+../output_0.02_coo/timeloop-mapper.stats.txt-Energy: 0.14 uJ
+../output_0.02_coo/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.04_bitmask.skip/timeloop-mapper.stats.txt:Summary Stats
+../output_0.04_bitmask.skip/timeloop-mapper.stats.txt--------------
+../output_0.04_bitmask.skip/timeloop-mapper.stats.txt-Utilization: 0.02
+../output_0.04_bitmask.skip/timeloop-mapper.stats.txt-Cycles: 173344
+../output_0.04_bitmask.skip/timeloop-mapper.stats.txt-Energy: 0.32 uJ
+../output_0.04_bitmask.skip/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.04_bitmask/timeloop-mapper.stats.txt:Summary Stats
+../output_0.04_bitmask/timeloop-mapper.stats.txt--------------
+../output_0.04_bitmask/timeloop-mapper.stats.txt-Utilization: 0.00
+../output_0.04_bitmask/timeloop-mapper.stats.txt-Cycles: 2113536
+../output_0.04_bitmask/timeloop-mapper.stats.txt-Energy: 0.26 uJ
+../output_0.04_bitmask/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.04_coo/timeloop-mapper.stats.txt:Summary Stats
+../output_0.04_coo/timeloop-mapper.stats.txt--------------
+../output_0.04_coo/timeloop-mapper.stats.txt-Utilization: 0.03
+../output_0.04_coo/timeloop-mapper.stats.txt-Cycles: 116247
+../output_0.04_coo/timeloop-mapper.stats.txt-Energy: 0.28 uJ
+../output_0.04_coo/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.08_bitmask.skip/timeloop-mapper.stats.txt:Summary Stats
+../output_0.08_bitmask.skip/timeloop-mapper.stats.txt--------------
+../output_0.08_bitmask.skip/timeloop-mapper.stats.txt-Utilization: 0.06
+../output_0.08_bitmask.skip/timeloop-mapper.stats.txt-Cycles: 215614
+../output_0.08_bitmask.skip/timeloop-mapper.stats.txt-Energy: 0.46 uJ
+../output_0.08_bitmask.skip/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.08_bitmask/timeloop-mapper.stats.txt:Summary Stats
+../output_0.08_bitmask/timeloop-mapper.stats.txt--------------
+../output_0.08_bitmask/timeloop-mapper.stats.txt-Utilization: 0.01
+../output_0.08_bitmask/timeloop-mapper.stats.txt-Cycles: 2113536
+../output_0.08_bitmask/timeloop-mapper.stats.txt-Energy: 0.40 uJ
+../output_0.08_bitmask/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.08_coo/timeloop-mapper.stats.txt:Summary Stats
+../output_0.08_coo/timeloop-mapper.stats.txt--------------
+../output_0.08_coo/timeloop-mapper.stats.txt-Utilization: 0.06
+../output_0.08_coo/timeloop-mapper.stats.txt-Cycles: 232490
+../output_0.08_coo/timeloop-mapper.stats.txt-Energy: 0.56 uJ
+../output_0.08_coo/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.1_bitmask.skip/timeloop-mapper.stats.txt:Summary Stats
+../output_0.1_bitmask.skip/timeloop-mapper.stats.txt--------------
+../output_0.1_bitmask.skip/timeloop-mapper.stats.txt-Utilization: 0.09
+../output_0.1_bitmask.skip/timeloop-mapper.stats.txt-Cycles: 238400
+../output_0.1_bitmask.skip/timeloop-mapper.stats.txt-Energy: 0.54 uJ
+../output_0.1_bitmask.skip/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.1_bitmask/timeloop-mapper.stats.txt:Summary Stats
+../output_0.1_bitmask/timeloop-mapper.stats.txt--------------
+../output_0.1_bitmask/timeloop-mapper.stats.txt-Utilization: 0.01
+../output_0.1_bitmask/timeloop-mapper.stats.txt-Cycles: 2113536
+../output_0.1_bitmask/timeloop-mapper.stats.txt-Energy: 0.48 uJ
+../output_0.1_bitmask/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.1_coo/timeloop-mapper.stats.txt:Summary Stats
+../output_0.1_coo/timeloop-mapper.stats.txt--------------
+../output_0.1_coo/timeloop-mapper.stats.txt-Utilization: 0.07
+../output_0.1_coo/timeloop-mapper.stats.txt-Cycles: 295152
+../output_0.1_coo/timeloop-mapper.stats.txt-Energy: 0.71 uJ
+../output_0.1_coo/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.2_bitmask.skip/timeloop-mapper.stats.txt:Summary Stats
+../output_0.2_bitmask.skip/timeloop-mapper.stats.txt--------------
+../output_0.2_bitmask.skip/timeloop-mapper.stats.txt-Utilization: 0.24
+../output_0.2_bitmask.skip/timeloop-mapper.stats.txt-Cycles: 341600
+../output_0.2_bitmask.skip/timeloop-mapper.stats.txt-Energy: 1.00 uJ
+../output_0.2_bitmask.skip/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.2_bitmask/timeloop-mapper.stats.txt:Summary Stats
+../output_0.2_bitmask/timeloop-mapper.stats.txt--------------
+../output_0.2_bitmask/timeloop-mapper.stats.txt-Utilization: 0.04
+../output_0.2_bitmask/timeloop-mapper.stats.txt-Cycles: 2113536
+../output_0.2_bitmask/timeloop-mapper.stats.txt-Energy: 0.95 uJ
+../output_0.2_bitmask/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.2_coo/timeloop-mapper.stats.txt:Summary Stats
+../output_0.2_coo/timeloop-mapper.stats.txt--------------
+../output_0.2_coo/timeloop-mapper.stats.txt-Utilization: 0.14
+../output_0.2_coo/timeloop-mapper.stats.txt-Cycles: 578952
+../output_0.2_coo/timeloop-mapper.stats.txt-Energy: 1.52 uJ
+../output_0.2_coo/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.4_bitmask.skip/timeloop-mapper.stats.txt:Summary Stats
+../output_0.4_bitmask.skip/timeloop-mapper.stats.txt--------------
+../output_0.4_bitmask.skip/timeloop-mapper.stats.txt-Utilization: 0.60
+../output_0.4_bitmask.skip/timeloop-mapper.stats.txt-Cycles: 552128
+../output_0.4_bitmask.skip/timeloop-mapper.stats.txt-Energy: 2.34 uJ
+../output_0.4_bitmask.skip/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.4_bitmask/timeloop-mapper.stats.txt:Summary Stats
+../output_0.4_bitmask/timeloop-mapper.stats.txt--------------
+../output_0.4_bitmask/timeloop-mapper.stats.txt-Utilization: 0.16
+../output_0.4_bitmask/timeloop-mapper.stats.txt-Cycles: 2113536
+../output_0.4_bitmask/timeloop-mapper.stats.txt-Energy: 2.30 uJ
+../output_0.4_bitmask/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.4_coo/timeloop-mapper.stats.txt:Summary Stats
+../output_0.4_coo/timeloop-mapper.stats.txt--------------
+../output_0.4_coo/timeloop-mapper.stats.txt-Utilization: 0.29
+../output_0.4_coo/timeloop-mapper.stats.txt-Cycles: 1157904
+../output_0.4_coo/timeloop-mapper.stats.txt-Energy: 3.57 uJ
+../output_0.4_coo/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.8_bitmask.skip/timeloop-mapper.stats.txt:Summary Stats
+../output_0.8_bitmask.skip/timeloop-mapper.stats.txt--------------
+../output_0.8_bitmask.skip/timeloop-mapper.stats.txt-Utilization: 0.93
+../output_0.8_bitmask.skip/timeloop-mapper.stats.txt-Cycles: 1449761
+../output_0.8_bitmask.skip/timeloop-mapper.stats.txt-Energy: 6.71 uJ
+../output_0.8_bitmask.skip/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.8_bitmask/timeloop-mapper.stats.txt:Summary Stats
+../output_0.8_bitmask/timeloop-mapper.stats.txt--------------
+../output_0.8_bitmask/timeloop-mapper.stats.txt-Utilization: 0.64
+../output_0.8_bitmask/timeloop-mapper.stats.txt-Cycles: 2113536
+../output_0.8_bitmask/timeloop-mapper.stats.txt-Energy: 6.70 uJ
+../output_0.8_bitmask/timeloop-mapper.stats.txt-Area: 0.02 mm^2
+--
+../output_0.8_coo/timeloop-mapper.stats.txt:Summary Stats
+../output_0.8_coo/timeloop-mapper.stats.txt--------------
+../output_0.8_coo/timeloop-mapper.stats.txt-Utilization: 0.36
+../output_0.8_coo/timeloop-mapper.stats.txt-Cycles: 3698200
+../output_0.8_coo/timeloop-mapper.stats.txt-Energy: 9.39 uJ
+../output_0.8_coo/timeloop-mapper.stats.txt-Area: 0.02 mm^2

@@ -1,0 +1,13 @@
+problem:
+  shape: gemm-ABZ
+  instance:
+    M: 256
+    K: 256
+    N: 12
+    densities:
+      A:
+        distribution: fixed-structured
+        density: 1
+      B:
+        distribution: fixed-structured
+        density: 1
