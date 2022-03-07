@@ -1,0 +1,46 @@
+architecture_constraints:
+  targets:
+  - target: BackingStorage 
+    type: temporal         
+    factors: M=0
+    permutation: NKM 
+  
+  - target: Fibercache
+    type: temporal
+    factors: M=1
+    permutation: NKM
+
+  - target: Fibercache
+    type: bypass
+    keep: [ B ]
+    bypass: [ A, Z ]
+  
+  - target: AReg
+    type: temporal
+    factors: M=0 N=1
+    permutation: NKM
+
+  - target: AReg
+    type: bypass
+    keep: [ A ]
+    bypass: [ B, Z ]
+
+  - target: Buffer
+    type: temporal
+    factors: M=0 K=0 N=0
+    permutation: NKM
+
+  - target: Buffer
+    type: bypass
+    keep: [ B ]
+    bypass: [ A,Z ]
+
+  - target: ZReg
+    type: temporal
+    factors: K=0 M=0 N=0
+    permutation: NKM
+
+  - target: ZReg
+    type: bypass
+    keep: [ Z ]
+    bypass: [ A, B ]
