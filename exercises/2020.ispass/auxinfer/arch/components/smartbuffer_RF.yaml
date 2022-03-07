@@ -1,0 +1,101 @@
+compound_components:
+  version: 0.3
+  classes:
+  - name: RQueueMerger
+    attributes:
+      technology: 45nm
+      data_storage_depth: 1
+      data_storage_width: 8
+      datawidth: 8
+      write_bandwidth: 1
+      read_bandwidth: 1
+      metadata_storage_depth: 256
+      metadata_storage_width: 28  
+      radix: 64
+    subcomponents:
+      - name: RQueues
+        class: storage
+        attributes:
+          technology: technology
+          data_storage_depth: data_storage_depth
+          data_storage_width: data_storage_width
+          datawidth: datawidth
+          write_bandwidth: write_bandwidth
+          read_bandwidth: read_bandwidth
+          metadata_storage_depth: metadata_storage_depth
+          metadata_storage_width: metadata_storage_width  
+      - name: RMerger
+        class: rmerger
+        attributes:
+          technology: technology
+          radix: radix
+          
+    actions:
+      - name: write
+        arguments: null
+        subcomponents:
+          - name: RQueues
+            actions:
+              - name: write
+                arguments: null
+      - name: read
+        arguments: null
+        subcomponents:
+          - name: RQueues
+            actions:
+              - name: read
+                arguments: null
+                repeat: radix
+          - name: RMerger
+            actions:
+              - name: merge
+                arguments: null    
+      - name: gated_write
+        arguments: null
+        subcomponents:
+          - name: RQueues
+            actions:
+              - name: gated_write
+                arguments: null
+      - name: gated_read
+        arguments: null
+        subcomponents:
+          - name: RQueues
+            actions:
+              - name: gated_read
+                arguments: null
+                repeat: radix
+      - name: metadata_write
+        arguments: null
+        subcomponents:
+          - name: RQueues
+            actions:
+              - name: metadata_write
+                arguments: null
+      - name: metadata_read
+        arguments: null
+        subcomponents:
+          - name: RQueues
+            actions:
+              - name: metadata_read
+                arguments: null
+                repeat: radix
+          - name: RMerger
+            actions:
+              - name: metadata_merge
+                arguments: null 
+      - name: gated_metadata_write
+        arguments: null
+        subcomponents:
+          - name: RQueues
+            actions:
+              - name: gated_metadata_write
+                arguments: null
+      - name: gated_metadata_read
+        arguments: null
+        subcomponents:
+          - name: RQueues
+            actions:
+              - name: gated_metadata_read
+                arguments: null
+                repeat: radix           
