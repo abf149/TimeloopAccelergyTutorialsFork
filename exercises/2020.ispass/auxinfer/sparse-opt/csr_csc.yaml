@@ -16,53 +16,31 @@ sparse_optimizations:
             rank-application-order: inner-to-outer
           
           - name: B
-            ranks:
+            ranks:       
+              - format: UOP
+                payload-word-bits: 0              
+              - format: UOP
+                payload-word-bits: 0            
               - format: UOP
                 payload-word-bits: 0
-              - format: UOP
-                payload-word-bits: 0            
-              - format: UOP
-                payload-word-bits: 0
-              - format: UOP
-                payload-word-bits: 0
-              - format: CP
-                metadata-word-bits: 14
-            rank-application-order: inner-to-outer
-
-    - name: AReg
-      representation-format:
-        data-spaces:
-          - name: A
-            ranks:
-              - format: UOP
-                payload-word-bits: 0            
-              - format: UOP
-                payload-word-bits: 0            
-              - format: CP
-                metadata-word-bits: 14          
-          - name: B
-            ranks:
-              - format: UOP
-                payload-word-bits: 0            
-              - format: UOP
-                payload-word-bits: 0            
               - format: UOP
                 payload-word-bits: 0
               - format: CP
                 metadata-word-bits: 14
             rank-application-order: inner-to-outer
-
     - name: Fibercache
       representation-format:
         data-spaces:
           - name: A
             ranks:
               - format: UOP
+                payload-word-bits: 0               
+              - format: UOP
                 payload-word-bits: 0            
               - format: CP
                 metadata-word-bits: 14          
           - name: B
-            ranks:
+            ranks:                     
               - format: UOP
                 payload-word-bits: 0            
               - format: UOP
@@ -75,7 +53,24 @@ sparse_optimizations:
           options:
             - target: B
               condition-on: [ A ]
-    
+    - name: AReg
+      representation-format:
+        data-spaces:
+          - name: A
+            ranks:      
+              - format: UOP
+                payload-word-bits: 0            
+              - format: CP
+                metadata-word-bits: 14          
+          - name: B
+            ranks:         
+              - format: UOP
+                payload-word-bits: 0            
+              - format: UOP
+                payload-word-bits: 0
+              - format: CP
+                metadata-word-bits: 14
+            rank-application-order: inner-to-outer    
     - name: Buffer
       representation-format:
         data-spaces:

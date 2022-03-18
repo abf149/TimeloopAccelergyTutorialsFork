@@ -39,7 +39,7 @@ architecture:
             class: storage
             subclass: reg
             attributes:
-              data_storage_depth: 1
+              data_storage_depth: 8
               data_storage_width: 8
               datawidth: 8
               write_bandwidth: 1

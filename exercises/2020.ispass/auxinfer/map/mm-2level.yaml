@@ -1,25 +1,45 @@
 mapping:
   - target: BackingStorage 
     type: temporal         
-    factors: K=1 M=0 N=1   
+    factors: M=128 K=16 N=16   
     permutation: NKM       
 
+  - target: Fibercache
+    type: temporal
+    factors: M=1 K=1 N=1
+    permutation: NKM
+
+  - target: Fibercache
+    type: bypass
+    keep: [ B ]
+    bypass: [ A, Z ]
+  
   - target: Buffer
     type: temporal
-    factors: K=1 M=1 N=0
-    permutation: NKM
+    factors: M=1 K=1 N=8
+    permutation: KNM
 
   - target: Buffer
     type: bypass
-    keep: [ A, B ]
-    bypass: [ Z ]
+    keep: [ B ]
+    bypass: [ A, Z ]  
   
-  - target: Reg
+  - target: AReg
     type: temporal
-    factors: K=0 M=1 N=1
+    factors: M=1 K=8 N=1
     permutation: NKM
 
-  - target: Reg
+  - target: AReg
+    type: bypass
+    keep: [ A ]
+    bypass: [ B, Z ]
+
+  - target: ZReg
+    type: temporal
+    factors: K=1 M=1 N=1
+    permutation: NKM
+
+  - target: ZReg
     type: bypass
     keep: [ Z ]
     bypass: [ A, B ]
